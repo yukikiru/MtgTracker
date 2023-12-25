@@ -5,6 +5,8 @@ import { FormsModule } from '@angular/forms';
 import { HomePage } from './home.page';
 
 import { HomePageRoutingModule } from './home-routing.module';
+import { PlayerFieldComponent } from '../player-field/player-field.component';
+import { CardTileComponent } from '../Components/card-tile/card-tile.component';
 
 
 @NgModule({
@@ -14,6 +16,6 @@ import { HomePageRoutingModule } from './home-routing.module';
     IonicModule,
     HomePageRoutingModule
   ],
-  declarations: [HomePage]
+  declarations: [HomePage, PlayerFieldComponent, CardTileComponent]
 })
 export class HomePageModule {}

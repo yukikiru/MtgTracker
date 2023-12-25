@@ -25,3 +25,18 @@
 #container a {
   text-decoration: none;
 }
+
+.top-player, .bottom-player {
+  width: 100%;
+  height: 50%; /* Half of the viewport height */
+  overflow: hidden; /* To handle any out-of-bound content */
+  position: relative;
+}
+.top-player{
+  transform: rotate(180deg);
+  transform-origin: center;
+}
+
+.divider{
+  border-bottom: grey 1px solid !important;
+}

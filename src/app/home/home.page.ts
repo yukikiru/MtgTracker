@@ -6,6 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['home.page.scss'],
 })
 export class HomePage {
+  player1Name: string = "Player 1";
+  player2Name: string = "Player 2";
 
   constructor() {}
 

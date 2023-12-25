@@ -1,0 +1,102 @@
+<ion-card>
+  <ion-header>
+    <ion-card-title>{{ card.cardName }}</ion-card-title>
+    <ion-card-subtitle
+      >({{ calculatePower() }}/{{ calculateToughness() }})<span
+        class="base-stats"
+      ></span
+    ></ion-card-subtitle>
+  </ion-header>
+  <ion-card-content>
+    <div class="counter-management-box">
+      <div class="counter-column">
+        <div class="counter-row">
+          ({{ card.plusOnePlusOneCounters }}) +1/+1
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('p1-1')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('p1-1')"
+          >
+            -
+          </button>
+        </div>
+        <div class="counter-row">
+          ({{ card.plusOneZeroCounters }}) +1/0&nbsp;&nbsp;
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('p1z')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('p1z')"
+          >
+            -
+          </button>
+        </div>
+        <div class="counter-row">
+          ({{ card.plusZeroOneCounters }}) 0/+1&nbsp;&nbsp;
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('pz1')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('pz1')"
+          >
+            -
+          </button>
+        </div>
+      </div>
+      <div class="counter-column">
+        <div class="counter-row">
+          ({{ card.minusOneMinusOneCounters }}) -1/-1
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('m1-1')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('m1-1')"
+          >
+            -
+          </button>
+        </div>
+        <div class="counter-row">
+          ({{ card.minusOneZeroCounters }}) -1/0&nbsp;
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('m1z')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('m1z')"
+          >
+            -
+          </button>
+        </div>
+        <div class="counter-row">
+          ({{ card.minusZeroOneCounters }}) 0/-1&nbsp;
+          <button
+            class="counter-plus-minus-button"
+            (click)="card.addCounter('mz1')"
+          >
+            +</button
+          >&nbsp;<button
+            class="counter-plus-minus-button"
+            (click)="card.removeCounter('mz1')"
+          >
+            -
+          </button>
+        </div>
+      </div>
+    </div>
+  </ion-card-content>
+</ion-card>

@@ -1,0 +1,24 @@
+ion-card {
+  min-width: 300px;
+  max-width: 300px;
+  margin: 10px;
+}
+
+
+.counter-management-box{
+  display: flex;
+}
+
+.counter-column{
+  flex-direction: column;
+  min-width: 50%;
+}
+
+.counter-row{
+  flex-direction: row;
+}
+
+.counter-plus-minus-button{
+  width: 25px;
+  height: 25px;
+}

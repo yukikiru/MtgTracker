@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      MTG Card Counter Tracker
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,12 +9,20 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">MTG Card Counter Tracker</ion-title>
     </ion-toolbar>
   </ion-header>
 
   <div id="container">
-    <strong>Ready to create an app?</strong>
-    <p>Start with Ionic <a target="_blank" rel="noopener noreferrer" href="https://ionicframework.com/docs/components">UI Components</a></p>
+    <div class="table">
+      <div class="top-player">
+        <app-player-field [player]="'Player 2'" [playerName]="'Player 2'"></app-player-field>
+      </div>
+      <div class="divider"></div>
+      <div class="bottom-player">
+        <app-player-field [player]="'Player 1'" [playerName]="'Player 1'"></app-player-field>
+      </div>
+    </div>
+
   </div>
 </ion-content>
